@@ -4,7 +4,7 @@
   "description": "lastore is an ecommerce project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
