@@ -11,7 +11,7 @@ connectDB();
 const Users = require('./Controller/UserController/userRoute')
 const Product = require('./Controller/ProductController/productRoute')
 const Order = require('./Controller/OrderController/orderRoute')
-
+const port = process.env.PORT || 3001;
 app.use('/api/users', Users)
 app.use('/api/products', Product)
 app.use('/api/orders', Order)
@@ -21,4 +21,4 @@ app.use('/api/orders', Order)
 app.get('/', function(req, res){
     res.send('hello');
 });
-app.listen(3001, () => console.log('Example app listening on port 3001!'))
+app.listen(port, () => console.log('Example app listening on port 3001!'))
