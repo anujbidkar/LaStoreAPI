@@ -16,4 +16,9 @@ app.use('/api/users', Users)
 app.use('/api/products', Product)
 app.use('/api/orders', Order)
 
+
+
+app.get('/', function(req, res){
+    res.send('hello');
+});
 app.listen(3001, () => console.log('Example app listening on port 3001!'))
